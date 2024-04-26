@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5d5d7d;
+}
+
+.wrapper {       
+        height: 100vh; /*vh View-Height para modificar a altura da nossa tela*/
+        width: 100vw; /*vw View-Width para mexer na largura da nossa tela*/
+}
+
+.container-left {
+        display: inline-block;/*Ao utilizar o display:inline-box, podemos organizar os elementos lado a lado e definirmos as propiedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+        width: 60%;
+        margin-top: 15%;
+        padding-left: 136px;
+}
+
+.container-right {
+        display: inline-block;/*Ao utilizar o display:inline-box, podemos organizar os elementos lado a lado e definirmos as propiedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+        background-color: rgb(93, 93, 125, 0.16);
+        height: 100vh;
+        width: 40%;
+        position: absolute; /* position absolute, fixa o conteudo na tela */
+}
+
+img {
+        position: relative;/*Position relative sempre vai ficar relativo ao lugar inicial onde estava, sempre comparar ele sobre a posição inicial dele*/
+        top: 25%;
+        right: 130px;
+}  
+               
+
+h1 {
+        font-size: 70px;
+        line-height: 80px;
+        width: 368px;
+       
+}
+
+p {
+        font-size: 28px;
+        line-height: 48px;
+        opacity: 0.6;
+        margin: 15px 0; /* quando eu coloco apenas 2 valores o primeriro ele vai colocar em cima e em baixo o segundo vaor para s lados */             
+        width: 540px;
+}
+
+
+button {
+       width: 269px;
+       height: 62px;
+       background:#9499EA;
+       box-shadow: 0px 10px 24px rgba(148,153,234,0.0979959);
+       font-size: 24px;
+       line-height: 36px;
+       text-align: center;
+       color: #ffffff;
+       border: none;
+       border-radius: 30px;
+       cursor: pointer;      
+}
+button:hover {
+        opacity: 0.8;
+}
+
+button:active {
+        opacity: 0.4;
+}
+
+.link-Home, .link-About, .link-Contact, .link-Work  {
+        font-size: 28px;
+        line-height: 41.5px;
+        margin-right: 41px;
+        cursor: pointer;
+}
+
+a:nth-child(2) {
+        opacity: 40%;
+} 
+
+a:hover {
+        opacity: 0.4;
+}
+
+a:active {
+        opacity: 0.8;
+}
+
+header {
+        margin: 24px  0   0     57px;
+        /*     top- left- right- bottom       */
+}
+
+.footer {
+        background-color: #9499EA;
+        margin-top: 7%;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        text-shadow: 2px 5px 5px #ffffff; 
+}
+
+@media screen and (max-width: 900px){
+        .container-left {
+                width: 100%;
+                height: 50%;
+                padding: 0;
+                margin: 0;
+        }
+
+        .container-right {
+                display: block;
+                height: auto;
+                width: 100%;
+                position: static;
+                padding: 40px;
+        }
+
+        img {
+                position: static;
+                max-width: 90%;/*MAX_WIDTH vai deixar o maximo de até 90%*/
+        }
+
+        header {
+                display: none;
+        }
+
+        h1 {
+                font-size: 36px;
+                line-height: 52px;
+                width: auto;
+                margin: 58px 50px 0 50px;
+                text-align: center;
+        }
+
+        p {
+                margin: 15px 36px;
+                width: auto;
+                text-align: center;
+                font-size: 14px;
+                line-height: 24px;
+        }
+
+        button {
+                /*Dessa forma tambem ajuda muito no alinhamento do conteudo/ texto/ button*/
+                margin: 0 auto;
+                display: block;
+                font-size: 100%;
+                width: 31%;
+                height: 11%;
+        }
+     
+}
+
+@media screen and (max-width: 330px) {
+        .container-left {
+                width: 70%;
+                height: 25%;
+                padding: 0;
+                margin: 0;
+        }
+}
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
